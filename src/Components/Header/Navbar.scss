@@ -1,0 +1,224 @@
+* {
+    text-decoration: none;
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header_link {
+    position: fixed;
+    margin-left: 4%;
+    width: 90.5%;
+    top: 0;
+    left: 0;
+    height: 70px;
+    padding: 10px 10px;
+    background-color: #FE2722;
+    border-radius: 15px;
+    z-index: 300000;
+    transition: all .1s linear;
+    margin-top: 10px;
+
+
+    &.fixed {
+        padding: 0px 10px;
+        background-color: white;
+        border: 1px solid #E6EAF0;
+
+        nav h1 {
+            color: #FE2722;
+        }
+
+        .Ul_link li a {
+            background-color: #EEF2F6;
+            padding: 1px 4px;
+
+            svg {
+                margin-top: 10px;
+                color: #6C737F;
+            }
+
+            span {
+                opacity: 0;
+            }
+        }
+
+        .sorch {
+            background-color: #EEF2F6;
+            border-radius: 8px;
+
+            input {
+                background-color: #EEF2F6;
+            }
+        }
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+        font-size: 25px;
+        color: white;
+    }
+}
+
+.sorch {
+    flex-grow: 1;
+    border: 1px solid white;
+    background-color: white;
+    height: 40px;
+    display: flex;
+    border-radius: 15px;
+    position: relative;
+    padding: 0 5px;
+
+    input {
+        flex: 1;
+        outline: none;
+        border: none;
+        background-color: white;
+        border-radius: 15px;    
+    }
+
+    button {
+        padding: 0px 25px;
+        height: 35px;
+        margin-top: 2.5px;
+        border-radius: 50px;
+        border: none;
+        background-color: #CCFF66;
+    }
+}
+
+.Ul_link {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    li a {
+        padding: 8px 10px;
+        background-color: #E81711;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 10px;
+
+        span {
+            font-size: 10px;
+            color: white;
+        }
+
+        svg {
+            font-size: 20px;
+            color: white;
+        }
+    }
+}
+
+.hammasi {
+    position: fixed;
+    background-color: white;
+    width: 92%;
+    top: 0;
+    left: 53.5px;
+    display: flex;
+    align-items: center;
+    margin-top: 99px;
+    justify-content: space-between;
+    z-index: 20000;
+
+    &.fixed {
+        position: fixed;
+        background-color: white;
+        width: 92%;
+        top: -4%;
+        left: 53.5px;
+        border-bottom: 1px solid #E6EAF0;
+        border-left: 1px solid #E6EAF0;
+        border-right: 1px solid #E6EAF0;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+}
+
+.navbar_top {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+
+    .navbar_top_link {
+        padding: 10px 10px;
+        background-color: #F0F4F7;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        svg {
+            color: rgb(254, 147, 6);
+        }
+    }
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+
+    .locat {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        border: 1px solid #CDD5DF;
+        padding: 10px 15px;
+        border-radius: 10px;
+
+        svg {
+            color: black;
+            cursor: pointer;
+        }
+    }
+}
+
+.iframe {
+    display: none;
+    position: absolute;
+    margin-top: 30%;
+    margin-left: -66%;
+    width: 85%;
+    background-color: #0006;
+    backdrop-filter: blur(5px);
+    padding: 30px 1200px;
+    height: 100vh;
+
+    &.show {
+        display: block;
+    }
+
+    button {
+        color: black;
+        border: none;
+        margin-left: 95%;
+        border-radius: 8px;
+        padding: 5px 10px;
+        margin-top: 120px;
+    }
+
+    svg {
+        font-size: 20px;
+    }
+}
