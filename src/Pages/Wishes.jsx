@@ -7,7 +7,7 @@ const Wishlist = () => {
   const toggleWishlistItem = useWishlistStore(state => state.toggleWishlistItem);
 
   return (
-    <div className="wishlist-container ">
+    <div className="wishlist-container " id='ty'>
       {cart.length === 0 ? (
         <img id='heart' src="https://t4.ftcdn.net/jpg/05/58/28/43/360_F_558284345_4D5NrsgO5PBwGiNGFV2xlOfg32DV6DNB.jpg" alt="" />
       ) : (
