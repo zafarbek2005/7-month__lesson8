@@ -9,10 +9,11 @@ body {
   background-color: $bg-color;
   margin: 0;
   padding: 0;
+  padding-top: 150px;
 }
 
-.cart {
-  max-width: 800px;
+.karzenka-container {
+  max-width: 1200px;
   margin: 50px auto;
   padding: 20px;
   background-color: white;
@@ -26,80 +27,117 @@ body {
     text-align: center;
   }
 
-  .cart-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid $border-color;
+  .cart-items {
+    .cart-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px; // Add margin to create space between items
+      padding-bottom: 20px;
+      border-bottom: 1px solid $border-color;
 
-    .product-image {
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 8px;
-    }
-
-    .product-details {
-      flex: 1;
-      margin-left: 20px;
-
-      .product-title {
-        margin: 0;
-        color: $secondary-color;
+      .product-image {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 8px;
       }
 
-      .product-description {
-        margin: 10px 0;
-        color: #777;
-      }
+      .product-details {
+        flex: 1;
+        margin-left: 20px;
 
-      .product-quantity {
-        display: flex;
-        align-items: center;
-
-        .quantity-btn {
-          width: 30px;
-          height: 30px;
-          border: 1px solid $border-color;
-          background-color: $bg-color;
+        .product-title {
+          margin: 0;
           color: $secondary-color;
-          cursor: pointer;
+          font-size: 18px;
+          font-weight: 600;
         }
 
-        .quantity-input {
-          width: 50px;
-          text-align: center;
-          border: 1px solid $border-color;
-          margin: 0 10px;
+        .product-description {
+          margin: 10px 0;
+          color: #777;
+          font-size: 14px;
+        }
+
+        .product-quantity {
+          display: flex;
+          align-items: center;
+
+          .quantity-btn {
+            width: 30px;
+            height: 30px;
+            border: 1px solid $border-color;
+            background-color: $bg-color;
+            color: $secondary-color;
+            cursor: pointer;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px;
+
+            &:disabled {
+              cursor: not-allowed;
+              opacity: 0.5;
+            }
+          }
+
+          .quantity-input {
+            width: 50px;
+            text-align: center;
+            border: 1px solid $border-color;
+            margin: 0 10px;
+            border-radius: 4px;
+            font-size: 16px;
+          }
+
+          .remove-btn {
+            background-color: transparent;
+            border: none;
+            color: $primary-color;
+            cursor: pointer;
+            margin-left: 10px;
+            font-size: 14px;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+
+        .product-price {
+          margin-top: 10px;
+          font-size: 18px;
+          color: $primary-color;
         }
       }
+    }
 
-      .product-price {
-        margin-top: 10px;
-        font-size: 18px;
+    .cart-summary {
+      text-align: right;
+      margin-top: 20px;
+      border-top: 1px solid $border-color;
+      padding-top: 20px;
+
+      .total-price {
+        font-size: 24px;
         color: $primary-color;
+        margin-right: 20px;
       }
-    }
-  }
 
-  .cart-summary {
-    text-align: right;
+      .checkout-btn {
+        background-color: $primary-color;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
 
-    .total-price {
-      font-size: 24px;
-      color: $primary-color;
-      margin-right: 20px;
-    }
-
-    .checkout-btn {
-      background-color: $primary-color;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 8px;
-      cursor: pointer;
-      font-size: 16px;
+        &:hover {
+          background-color: darken($primary-color, 10%);
+        }
+      }
     }
   }
 }
