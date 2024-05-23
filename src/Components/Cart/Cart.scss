@@ -26,6 +26,7 @@ container{
     height: 300px;
     transition: all .5s linear;
     animation: Heart 1s ease-in-out infinite alternate;
+    
     @keyframes Heart {
         0% {
             transform: scale(1);
@@ -35,7 +36,7 @@ container{
         }
     }
     
-    padding-top: 80px;
+    padding-top: 40px;
     .cart__shadow {
         position: relative;
         top: 0;
@@ -44,6 +45,7 @@ container{
         height: 300px;
         border-radius: 10px;    
         transition: .3s ease-in-out;
+        
          img{
             position: absolute;
             width: 230px;

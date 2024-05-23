@@ -27,7 +27,7 @@ const Navbar = () => {
   return (
     <>
       <div className="container">
-        <header className={fix ? 'header_link fixed' : 'header_link'}>
+        <header className={fix ? 'header_link fixed' : 'header_link' }>
           <nav>
             <Link to={'/'}><h1>AliExprees</h1></Link>
             <ul className='Ul_link'>

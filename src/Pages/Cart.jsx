@@ -39,9 +39,9 @@ const Karzenka = () => {
   }, [cart]);
 
   return (
-    <div className="karzenka-container">
+    <div className="karzenka-container" id='top'>
       {cart.length === 0 ? (
-        <p>Корзинка пуста</p>
+       <img src="https://static.vecteezy.com/system/resources/thumbnails/016/462/240/small_2x/empty-shopping-cart-illustration-concept-on-white-background-vector.jpg" alt="emty.img" />
       ) : (
         <div className="cart-items">
           <h2>Shopping Cart</h2>

@@ -4,6 +4,7 @@ import { IoMdHeart } from 'react-icons/io';
 import './Cart.scss';
 import useCartStore from '../../Context/CartStore'; // Ensure this path matches your file structure
 import useWishlistStore from '../../Context/wishStore'; // Ensure this path matches your file structure
+import Banner from "../Banner/Banner";
 
 const Cart = ({ productData }) => {
   const addToCartStore = useCartStore((state) => state.addToCart);
@@ -33,6 +34,7 @@ const Cart = ({ productData }) => {
 
   return (
     <div className="container wrapper">
+      <Banner/>
       {productItems}
     </div>
   );

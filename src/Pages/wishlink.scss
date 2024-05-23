@@ -1,6 +1,14 @@
 // wishlink.scss
 
+#heart{
+    width: 80%;
+    object-fit: cover;
+    position: fixed;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%,-50%);
 
+}
 
 .wishlist-container {
     padding: 20px;

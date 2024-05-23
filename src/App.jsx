@@ -4,6 +4,7 @@ import Home from './Components/Home/Home'
 import Cartlink from './Pages/Cart'
 import Wishlist from './Pages/Wishes'
 import { Route, Routes } from 'react-router-dom'
+import Banner from './Components/Banner/Banner'
 
 const App = () => {
   return (

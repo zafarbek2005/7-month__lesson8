@@ -9,9 +9,15 @@ body {
   background-color: $bg-color;
   margin: 0;
   padding: 0;
-  padding-top: 150px;
+  padding-top: 50px;
 }
-
+#top{
+  position: relative;
+  top: 70px;
+   img{
+    width: 900px;
+   }
+} 
 .karzenka-container {
   max-width: 1200px;
   margin: 50px auto;
@@ -20,6 +26,7 @@ body {
   border: 1px solid $border-color;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
 
   h2 {
     margin-bottom: 20px;

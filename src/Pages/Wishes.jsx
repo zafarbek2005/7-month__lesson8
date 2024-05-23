@@ -8,9 +8,8 @@ const Wishlist = () => {
 
   return (
     <div className="wishlist-container ">
-      <h1 className="wishlist-heading">Wishlist</h1>
       {cart.length === 0 ? (
-        <p>No items in wishlist.</p>
+        <img id='heart' src="https://t4.ftcdn.net/jpg/05/58/28/43/360_F_558284345_4D5NrsgO5PBwGiNGFV2xlOfg32DV6DNB.jpg" alt="" />
       ) : (
         <ul>
           {cart.map((item) => (
